@@ -6,6 +6,7 @@
 -----# Uses Global Variable 9 "GV9" as Cell input.. 1 to 12                                                   #
 -----# Gives a accurate percentage of battery voltage left.                                                   #
 -----#                                                                                                        #
+-----# copy script file to SDCard location : SCRIPTS/TELEMETRY                                                #
 -----#                                                                                                        #
 ---- # License GPLv3: http://www.gnu.org/licenses/gpl-3.0.html                                                #
 ---- #                                                                                                        #
