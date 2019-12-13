@@ -38,7 +38,7 @@ local function run_func(event) -- Called periodically when screen is visible
   bg_func()
   Cells = model.getGlobalVariable(8, 0) or 1
   Voltage = getValue(BatterySensor) or 0
-  Percent = getCellPercent(Voltage / Cells)
+  Percent = getCellPercent(Voltage / Cells) or 0
   Draw_Screen()
   
 end
