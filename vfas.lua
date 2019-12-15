@@ -45,8 +45,6 @@ end
 
 function Draw_Screen()
   lcd.clear()  
-  Gauge_Width = 80
-  Gauge_Height = 18
   
   if Voltage == 0 then
     lcd.drawText((LCD_W / 2) - ((string.len("NO SENSOR") * 8.5) / 2) ,45,"NO SENSOR", MIDSIZE + BLINK) 
@@ -63,7 +61,9 @@ function Draw_Screen()
     end
   end
   
-  lcd.drawGauge(5, ((LCD_H / 2) - (Gauge_Height /2)), (LCD_W - 10), Gauge_Height, Percent, 100) 
+  lcd.drawGauge(5, ((LCD_H / 2) - (18 /2)), (LCD_W - 15), 18, Percent, 100) 
+  lcd.drawFilledRectangle((LCD_W - 11) , (LCD_H / 2) - 5, 5, 10 , SOLID)
+
   if Voltage > 0 then
     lcd.drawText((LCD_W / 2) + 16, 8, Cells.." Cell", RIGHT) 
   end
